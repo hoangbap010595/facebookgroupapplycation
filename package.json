@@ -1,0 +1,25 @@
+{
+  "name": "searchpostingroupbyhastag",
+  "version": "1.0.0",
+  "description": "search all post in group by hastag",
+  "main": "main.js",
+  "dependencies": {
+    "fb": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron": "^5.0.6"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoangbap010595/searchpostingroupbyhastag"
+  },
+  "keywords": [
+    "hastag"
+  ],
+  "author": "lchoang1995@gmail.com",
+  "license": "ISC"
+}

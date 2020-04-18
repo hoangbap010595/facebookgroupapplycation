@@ -1,0 +1,47 @@
+{
+    "MESSAGE_Title": "Thông báo",
+    "MESSAGE_Yes": "Có",
+    "MESSAGE_No": "Không",
+    "MESSAGE_Quit": "Bạn chắc chắn muốn kết thúc?",
+    "MESSAGE_Logout": "Đăng xuất ra khỏi thiết bị này?",
+
+    "HOME_Main": "Hệ thống",
+    "HOME_Dashboard": "Bảng điều khiển",
+    "HOME_AmazonScan": "Quét dữ liệu",
+    "HOME_DataManage": "Quản lý dữ liệu",
+    "HOME_JobUpdate": "Cập nhật tự động",
+    "HOME_Settings": "Cài đặt",
+    "HOME_Preferences": "Liên kết",
+    "HOME_Profile": "Hồ sơ",
+    "HOME_Logout": "Đăng xuất",
+
+    "LOGIN_Title": "Đăng nhập hệ thống",
+    "LOGIN_Email": "Tên đăng nhập",
+    "LOGIN_Email_Hint": "Nhập địa chỉ email",
+    "LOGIN_Email_Info": "Địa chỉ email được bảo mật và sử dụng trong hệ thống.",
+    "LOGIN_Password": "Mật khẩu",
+    "LOGIN_Password_Hint": "Nhập mật khẩu",
+    "LOGIN_RememberMe": "Nhớ mật khẩu?",
+    "LOGIN_Submit": "Đăng nhập",
+    "LOGIN_Register": "Đăng ký",
+    "LOGIN_ForgotPassword": "Quên mật khẩu?",
+    "LOGIN_Option": "hoặc",
+
+    "REGISTER_Title": "Đăng ký tài khoản",
+    "REGISTER_Email": "Địa chỉ email",
+    "REGISTER_Email_Hint": "Nhập địa chỉ email",
+    "REGISTER_Email_Info": "Nhập đúng địa chỉ email để nhận thông báo khi có cập nhật.",
+    "REGISTER_Password": "Mật khẩu",
+    "REGISTER_Password_Hint": "Nhập mật khẩu",
+    "REGISTER_Password_Confirm": "Nhập lại mật khẩu",
+    "REGISTER_Password_Confirm_Hint": "Nhập lại mật khẩu",
+    "REGISTER_MESSAGE_Password_Do_Not_Match": "Mật khẩu không trùng khớp...",
+    "REGISTER_Submit": "Đăng ký",
+
+    "FORGOTPASSWORD_Title": "Quên mật khẩu",
+    "FORGOTPASSWORD_Email": "Địa chỉ email",
+    "FORGOTPASSWORD_Email_Hint": "Nhập địa chỉ email",
+    "FORGOTPASSWORD_Email_Info": "Hệ thống sẽ gửi email xác nhận tới địa chỉ này.",
+    "FORGOTPASSWORD_Submit": "Gửi"
+
+}

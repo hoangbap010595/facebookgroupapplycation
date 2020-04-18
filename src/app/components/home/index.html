@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="metro4:init" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../../../assets/css/metro-all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Insert this line above script imports  -->
+    <script>
+        window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script>
+    <script src="../../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../../../assets/js/metro.min.js"></script>
+    <script>
+        window.i18n = new (nodeRequire('../../translations/i18n.js'));
+        nodeRequire('./index.js');
+    </script>
+</head>
+
+<body class="p-2">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1599326243554090',
+                cookie: true,
+                xfbml: true,
+                version: 'v6.0'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="window">
+        <div class="window-caption">
+            <span class="icon mif-facebook2"></span>
+            <span class="title">Facebook Infomation</span>
+        </div>
+        <div class="window-content p-2">
+            <input hidden id="access_token" type="text" value="" />
+            <div class="grid">
+                <div class="row">
+                    <div class="cell-3">
+                        <button id="fb-button" class="image-button primary"
+                            onclick="localization.home.fun.checkLoginStateFacebook();">
+                            <span class="mif-facebook2 icon"></span>
+                            <span class="caption">Sign in with Facebook</span>
+                        </button>
+                        <div id="fb-infomation" class="card m-0">
+                            <div class="card-header p-2">
+                                <div class="avatar">
+                                    <img id="fb-avatar" src="../../../assets/images/user.png">
+                                </div>
+                                <div id="fb-name" class="name">John Doe</div>
+                                <div id="fb-id" class="date">123456789</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-5">
+                        
+                    </div>
+                    <div class="cell-4">
+                        <div id="fb-group" class="card m-0">
+                            <div class="card-header p-2">
+                                <div class="avatar">
+                                    <img id="fb-gr-avatar" src="../../../assets/images/fb-groupes-logo.png">
+                                </div>
+                                <div id="fb-gr-name" class="name">BestHasTagForApplication</div>
+                                <div id="fb-gr-id" class="date">870423283379459</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="window">
+        <div class="window-caption">
+            <span class="icon mif-search"></span>
+            <span class="title">Search Post in group by #Hastag</span>
+        </div>
+        <div class="window-content p-2">
+            <div class="row">
+                <div class="cell-md-12">
+                    <form id="form-search-hastag" onsubmit="return false;">
+                        <input id="txtHastag" type="text" data-role="input" data-prepend="Enter Hastag: "
+                            value="" data-search-button="true" data-search-button-click="custom"
+                            placeholder="Enter your hastag: #yourhastag"
+                            data-on-search-button-click="window.localization.home.fun.formSubmitSearchHastag">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell-md-12">
+                    <div class="row mb-2">
+                        <div class="cell-md-8 my-search-wrapper"></div>
+                        <div class="cell-md-4 my-rows-wrapper"></div>
+                    </div>
+                    <div id="my-table-data" class="my-table-data">
+                        <table id="table-result" class="table table-border striped mt-4" data-role="table"
+                            data-rows="10" data-rows-steps="10, 20, 50" data-show-activity="false" data-rownum="true"
+                            data-search-wrapper=".my-search-wrapper" data-rows-wrapper=".my-rows-wrapper"
+                            data-pagination-wrapper=".my-pagination-wrapper" data-list-search-title="Search:"
+                            data-horizontal-scroll="true" data-check-col-index="0"
+                            data-table-info-title="Show $1 - $2 / $3 items">
+                            <thead>
+                                <tr>
+                                    <th data-sortable="true" data-show="false" data-sort-dir="asc">ID</th>
+                                    <th data-sortable="true">From</th>
+                                    <th data-sortable="true">Description</th>
+                                    <th data-sortable="true" data-format="date" data-format-mask="%d-%m-%y">Date
+                                    </th>
+                                    <th data-sortable="true">URL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex flex-justify-center my-pagination-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
